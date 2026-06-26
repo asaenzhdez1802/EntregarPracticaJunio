@@ -40,6 +40,11 @@ namespace EntregarPracticaJunio
                 vehiculo = new Motocicleta(horas, 150);
             }
 
+            else if (cmbTipoVehiculo.Text == "Automovil")
+            {
+                vehiculo = new Automovil(horas, "ABC-123");
+            }  
+
         }
 
     }   
