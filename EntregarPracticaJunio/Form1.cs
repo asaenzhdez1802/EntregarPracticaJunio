@@ -16,5 +16,24 @@ namespace EntregarPracticaJunio
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            cmbTipoVehiculo.Items.Add("Motocicleta");
+            cmbTipoVehiculo.Items.Add("Automovil");
+            cmbTipoVehiculo.Items.Add("Camioneta");
+            cmbTipoVehiculo.SelectedIndex = 0;
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(txtHoras.Text, out int horas) || horas <= 0)
+            {
+                MessageBox.Show("Ingrese horas válidas.");
+                return;
+            }
+
+            Vehiculo vehiculo;
+
     }
 }
