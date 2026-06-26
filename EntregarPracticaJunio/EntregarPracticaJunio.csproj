@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{27F7E888-95D5-48A7-8582-6E80BBE3E589}</ProjectGuid>
+    <ProjectGuid>{46BAC07D-4A4F-8922-8B86-282C40C0E89A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>EntregarPracticaJunio</RootNamespace>
     <AssemblyName>EntregarPracticaJunio</AssemblyName>
@@ -53,6 +53,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Motocicleta.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vehiculo.cs" />
