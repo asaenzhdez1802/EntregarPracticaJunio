@@ -43,8 +43,11 @@ namespace EntregarPracticaJunio
             else if (cmbTipoVehiculo.Text == "Automovil")
             {
                 vehiculo = new Automovil(horas, "ABC-123");
-            }  
+            }
+            else
+                vehiculo = new Camioneta(horas, 2);
 
+            lblResultado.Text = "Total a pagar: $" + vehiculo.CalcularTarifa();
         }
 
     }   
